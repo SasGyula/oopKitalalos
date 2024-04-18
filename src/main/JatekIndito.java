@@ -11,7 +11,12 @@ public class JatekIndito {
         //referencia nékül csak a konstruktort hivjuk azaz példányosítjuk
         new Jatek();
         
-        new Jatekos().tippel();
+//        3 játékos 1-1 tippel
+//        
+//        new Jatekos().tippel();
+//        new Jatekos().tippel();
+//        new Jatekos().tippel();
+//        
     }
     
 }

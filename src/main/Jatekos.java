@@ -3,9 +3,13 @@ package main;
 import java.util.Random;
 
 public class Jatekos {
+        //adattagok
+        int tipp;
+
+        //tagfüggvények
     void tippel(){
         Random rnd = new Random();
-        int tipp = rnd.nextInt(10);
+        tipp = rnd.nextInt(10);
         System.out.println("tippelésem: " + tipp);
     }
 }
