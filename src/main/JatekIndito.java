@@ -9,7 +9,8 @@ public class JatekIndito {
         //referencia.start();
         
         //referencia nékül csak a konstruktort hivjuk azaz példányosítjuk
-        new Jatek();
+        //egységbezárás
+        //new Jatek();
         
 //        3 játékos 1-1 tippel
 //        
@@ -17,6 +18,29 @@ public class JatekIndito {
 //        new Jatekos().tippel();
 //        new Jatekos().tippel();
 //        
+//öröklődés és polimorfózis
+        //new CsigaversenyJatek().indit();
+        //CsigaversenyJatek verseny = new CsigaversenyJatek();
+        //verseny.indit();
+        
+        //polimorfizmus: bal oldalt állhat az ős
+        Jatek kitalalos = new KitalalosJatek();
+        Jatek verseny = new CsigaversenyJatek();
+        
+        Jatek[] jatekok = {kitalalos, verseny, new Jatek()};
+        for(Jatek jatek : jatekok){
+//            //ezt akkor tehetük meg ha a játék igazi típusa kitalálós játék
+//            //((KitalalosJatek)jatek).start();
+//            //Hibás tervezés eredménye: nincs közös metódus
+//            if(jatek instanceof KitalalosJatek){
+//                //a dupla zárójellel kasztoltuk a jatek-ot Kitalalosjatekra
+//                ((KitalalosJatek)jatek).start();
+//            }else if(jatek instanceof CsigaversenyJatek){
+//                ((CsigaversenyJatek)jatek).indit();
+//            }    
+            //jatek.kezdes();
+            jatek.start();
+        }
     }
     
 }
